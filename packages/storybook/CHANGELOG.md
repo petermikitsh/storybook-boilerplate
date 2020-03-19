@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/petermikitsh/storybook-version-example/compare/v0.2.1...v0.2.2) (2020-03-19)
+
+
+### Bug Fixes
+
+* use --add flag when publishing storybook-config.json ([85a7586](https://github.com/petermikitsh/storybook-version-example/commit/85a758622a8ad8d4aa2bf6e22b423d51ac40cda2))
+
+
+
+
+
 ## [0.2.1](https://github.com/petermikitsh/storybook-version-example/compare/v0.2.0...v0.2.1) (2020-03-19)
 
 **Note:** Version bump only for package storybook

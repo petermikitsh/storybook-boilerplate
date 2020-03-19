@@ -14,7 +14,7 @@
         return oldFetch(arguments);
       }
       const prefix = window.location.pathname.split("/")[1];
-      return window.fetch("/" + prefix + "/" + filename);
+      return oldFetch("/" + prefix + "/" + filename);
     };
   }
 </script>

@@ -24,6 +24,6 @@ NODE_DEBUG=gh-pages npx --no-install gh-pages \
 
 # Copy storybook config to gh-pages root
 STORYBOOK_DIR=$SUBPACKAGE_DIR/.storybook
-NODE_DEBUG=gh-pages npx --no-install gh-pages \
+NODE_DEBUG=gh-pages npx --no-install gh-pages --add \
    --dist $STORYBOOK_DIR \
    --src storybook-config.json

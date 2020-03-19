@@ -1,0 +1,34 @@
+{
+  "name": "storybook",
+  "version": "0.0.0",
+  "description": "Example storybook with gh-pages integration",
+  "author": "Peter Mikitsh <peter.mikitsh@gmail.com>",
+  "homepage": "https://github.com/petermikitsh/storybook-version-example#readme",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://zuora.jfrog.io/zuora/api/npm/zuora-npm/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petermikitsh/storybook-version-example.git"
+  },
+  "scripts": {
+    "build": "build-storybook -o dist",
+    "postversion": "scripts/postversion.sh",
+    "release": "scripts/release.sh",
+    "start": "start-storybook -p 6006 --quiet -s .storybook"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@panosvoudouris/addon-versions": "^1.0.1",
+    "@storybook/addon-actions": "^5.3.17",
+    "@storybook/addon-links": "^5.3.17",
+    "@storybook/addons": "^5.3.17",
+    "@storybook/react": "^5.3.17",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.1.1",
+    "gh-pages": "^2.2.0",
+    "json": "^9.0.6"
+  }
+}

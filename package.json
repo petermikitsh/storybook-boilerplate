@@ -1,0 +1,17 @@
+{
+  "name": "storybook-version-example-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build --parallel",
+    "clean": "lerna run clean --parallel",
+    "release": "lerna run release --parallel",
+    "start": "lerna run start --parallel",
+    "version": "scripts/version.sh"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
+}

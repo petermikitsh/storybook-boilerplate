@@ -7,6 +7,6 @@ set -x
 set -e
 
 npm run clean
-npx --no-install lerna version --conventional-commits --yes --no-git-tag-version
+npx --no-install lerna version --conventional-commits --yes
 npm run build
 npm run release

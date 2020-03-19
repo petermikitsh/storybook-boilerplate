@@ -7,9 +7,9 @@
   "scripts": {
     "build": "lerna run build --parallel",
     "clean": "lerna run clean --parallel",
+    "publish": "scripts/publish.sh",
     "release": "lerna run release --parallel",
-    "start": "lerna run start --parallel",
-    "version": "scripts/version.sh"
+    "start": "lerna run start --parallel"
   },
   "devDependencies": {
     "lerna": "^3.20.2"

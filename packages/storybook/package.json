@@ -1,6 +1,6 @@
 {
   "name": "storybook",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Example storybook with gh-pages integration",
   "author": "Peter Mikitsh <peter.mikitsh@gmail.com>",
   "homepage": "https://github.com/petermikitsh/storybook-version-example#readme",
@@ -18,7 +18,6 @@
     "release": "scripts/release.sh",
     "start": "start-storybook -p 6006 --quiet -s .storybook"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@panosvoudouris/addon-versions": "^1.0.1",

@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "build-storybook -o dist",
-    "postversion": "scripts/postversion.sh",
+    "version": "scripts/version.sh",
     "release": "scripts/release.sh",
     "start": "start-storybook -p 6006 --quiet -s .storybook"
   },

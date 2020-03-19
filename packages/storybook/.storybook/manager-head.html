@@ -1,0 +1,20 @@
+<script>
+  var oldFetch = window.fetch;
+
+  var notRunningLocally =
+    ["localhost", "0.0.0.0"].indexOf(window.location.hostname) === -1;
+
+  if (notRunningLocally) {
+    window.fetch = function() {
+      var maybeURL = arguments[0];
+      var isString = typeof maybeURL === "string";
+      const filename = "storybook-config.json";
+      const isConfig = isString && maybeURL.indexOf(filename) > -1;
+      if (!isConfig) {
+        return oldFetch(arguments);
+      }
+      const prefix = window.location.pathname.split("/")[1];
+      return window.fetch("/" + prefix + "/" + filename);
+    };
+  }
+</script>

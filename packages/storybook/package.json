@@ -1,6 +1,6 @@
 {
   "name": "storybook",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Example storybook with gh-pages integration",
   "author": "Peter Mikitsh <peter.mikitsh@gmail.com>",
   "homepage": "https://github.com/petermikitsh/storybook-version-example#readme",

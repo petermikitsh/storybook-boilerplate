@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/petermikitsh/storybook-version-example/compare/v0.1.7...v0.2.0) (2020-03-19)
+
+
+### Features
+
+* add typescript, dark mode ([af84bc5](https://github.com/petermikitsh/storybook-version-example/commit/af84bc5185eef46e7e9a52aba367557f247e3776))
+
+
+
+
+
 ## [0.1.7](https://github.com/petermikitsh/storybook-version-example/compare/v0.1.6...v0.1.7) (2020-03-19)
 
 

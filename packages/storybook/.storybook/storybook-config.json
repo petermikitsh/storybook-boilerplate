@@ -1,7 +1,9 @@
 {
   "storybook": {
     "versions": {
-      "availableVersions": [],
+      "availableVersions": [
+        "0.1.0"
+      ],
       "hostname": "petermikitsh.github.io/storybook-version-example"
     }
   }

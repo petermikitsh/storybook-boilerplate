@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.7](https://github.com/petermikitsh/storybook-version-example/compare/v0.1.6...v0.1.7) (2020-03-19)
+
+
+### Bug Fixes
+
+* logic ([6dc646c](https://github.com/petermikitsh/storybook-version-example/commit/6dc646c9330f2d94b30ad7eed0a9c952d51d5bec))
+
+
+
+
+
 ## [0.1.6](https://github.com/petermikitsh/storybook-version-example/compare/v0.1.5...v0.1.6) (2020-03-19)
 
 **Note:** Version bump only for package storybook-version-example-monorepo

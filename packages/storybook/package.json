@@ -34,8 +34,14 @@
     "babel-loader": "^8.0.6",
     "gh-pages": "^2.2.0",
     "json": "^9.0.6",
+    "lodash.get": "^4.4.2",
+    "react-docgen-typescript-loader": "^3.7.1",
     "rimraf": "^3.0.2",
     "storybook-addon-jsx": "^7.1.15",
-    "storybook-dark-mode": "^0.3.1"
+    "storybook-addon-react-docgen": "^1.2.28",
+    "storybook-addon-smart-knobs": "^6.0.2",
+    "storybook-dark-mode": "^0.3.1",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.3"
   }
 }

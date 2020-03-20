@@ -5,6 +5,13 @@ import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/core";
 import addons from "@storybook/addons";
 import React, { useState, useEffect } from "react";
+import { withPropsTable } from "storybook-addon-react-docgen";
+import { withSmartKnobs } from "storybook-addon-smart-knobs";
+import { withKnobs } from "@storybook/addon-knobs";
+
+addDecorator(withSmartKnobs());
+addDecorator(withKnobs);
+addDecorator(withPropsTable);
 
 const cleanJSXString = (jsxString: string) => {
   let editedJsxString = jsxString;
@@ -29,7 +36,10 @@ addParameters({
   jsx: {
     // @ts-ignore
     showFunctions: false,
-    onBeforeRender: cleanJSXString
+    onBeforeRender: cleanJSXString,
+    filterProps: val => {
+      return val !== undefined && typeof val !== "function";
+    }
   }
 });
 addDecorator(jsxDecorator);

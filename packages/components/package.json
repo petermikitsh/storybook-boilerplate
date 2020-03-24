@@ -1,6 +1,6 @@
 {
   "name": "@demo/components",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Example storybook with gh-pages integration",
   "author": "Peter Mikitsh <peter.mikitsh@gmail.com>",
   "homepage": "https://github.com/petermikitsh/storybook-version-example#readme",

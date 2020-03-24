@@ -1,5 +1,4 @@
 const path = require("path");
-const get = require("lodash.get");
 
 module.exports = {
   stories: ["../stories/**/*.stories.tsx"],
@@ -17,35 +16,26 @@ module.exports = {
     config.mode = "development";
     config.module.rules = [
       {
-        test: /\.(tsx|ts)?$/,
-        include: path.resolve(__dirname, "../"),
-        use: [
-          "ts-loader",
-          {
-            loader: require.resolve("react-docgen-typescript-loader"),
-            options: {
-              tsconfigPath: path.resolve(__dirname, "../tsconfig.json"),
-              shouldExtractLiteralValuesFromEnum: true,
-              propFilter: prop => {
-                const isAria = prop.name.startsWith("aria");
-                const isNative =
-                  [
-                    "DOMAttributes",
-                    "ButtonHTMLAttributes",
-                    "HTMLAttributes"
-                  ].indexOf(get(prop, "parent.name")) > -1;
-                if (isAria || isNative) {
-                  return false;
-                }
-                return true;
-              }
-            }
-          }
-        ]
+        test: /\.tsx?$/,
+        include: [path.resolve(__dirname, "../")],
+        loader: "babel-loader",
+        options: {
+          cacheDirectory: false
+        }
       }
     ];
-    delete config.optimization.minimizer;
     config.resolve.extensions = [".tsx", ...config.resolve.extensions];
+
+    // config.devServer = {
+    //   watchOptions: {
+    //     ignored: [/node_modules([\\]+|\/)+(?!@demo\/components)/]
+    //   }
+    // };
+
+    // config.watchOptions = {
+    //   ignored: [/node_modules([\\]+|\/)+(?!@demo\/components)/]
+    // };
+
     return config;
   }
 };

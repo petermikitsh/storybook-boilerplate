@@ -1,13 +1,10 @@
 {
-  "name": "storybook",
+  "name": "@demo/storybook",
   "version": "0.3.0",
   "description": "Example storybook with gh-pages integration",
   "author": "Peter Mikitsh <peter.mikitsh@gmail.com>",
   "homepage": "https://github.com/petermikitsh/storybook-version-example#readme",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://zuora.jfrog.io/zuora/api/npm/zuora-npm/"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/petermikitsh/storybook-version-example.git"
@@ -17,20 +14,21 @@
     "clean": "rimraf dist",
     "version": "scripts/version.sh",
     "release": "scripts/release.sh",
-    "start": "start-storybook -p 6006 --quiet -s .storybook"
+    "start": "start-storybook --quiet --no-dll -p 6006 -s .storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
     "@babel/preset-typescript": "^7.8.3",
+    "@demo/components": "link:../components",
     "@harelpls/storybook-addon-materialui": "^1.0.2",
     "@material-ui/core": "^4.9.7",
     "@panosvoudouris/addon-versions": "^1.0.1",
-    "@storybook/addon-actions": "^5.3.17",
-    "@storybook/addon-knobs": "^5.3.17",
-    "@storybook/addon-links": "^5.3.17",
-    "@storybook/addons": "^5.3.17",
-    "@storybook/react": "^5.3.17",
+    "@storybook/addon-actions": "6.0.0-alpha.28",
+    "@storybook/addon-knobs": "6.0.0-alpha.28",
+    "@storybook/addon-links": "6.0.0-alpha.28",
+    "@storybook/addons": "6.0.0-alpha.28",
+    "@storybook/react": "6.0.0-alpha.28",
     "babel-loader": "^8.0.6",
     "gh-pages": "^2.2.0",
     "json": "^9.0.6",

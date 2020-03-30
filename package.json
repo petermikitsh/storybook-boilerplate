@@ -7,14 +7,11 @@
   "scripts": {
     "build": "lerna run build --parallel",
     "clean": "lerna run clean --parallel",
-    "postinstall": "patch-package",
     "publish": "scripts/publish.sh",
     "release": "lerna run release --parallel",
     "start": "lerna run start --parallel"
   },
   "devDependencies": {
-    "lerna": "^3.20.2",
-    "patch-package": "^6.2.1",
-    "postinstall-postinstall": "^2.0.0"
+    "lerna": "^3.20.2"
   }
 }
